@@ -1,0 +1,88 @@
+.contact {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background: url("https://media1.giphy.com/media/tVM0hQmU52iKcLI1Kk/giphy.gif?cid=790b7611843fb621cbd48e6bb81a582f3130a1afc58f08a4&rid=giphy.gif&ct=g") no-repeat center center;
+    background-size: cover;
+}
+
+.text,
+.form {
+    height: 80vh;
+}
+
+.text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 38%;
+    font-size: 3rem;
+}
+
+.form {
+    padding: 30px 50px;
+    width: 48%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px) brightness(50%);
+    color: white;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.form::-webkit-scrollbar {
+    width: 4px;
+}
+
+.form::-webkit-scrollbar-button,
+.form::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.form::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+.form-input-group {
+    margin: 20px 0;
+}
+
+.form-input-group label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+select,
+input {
+    font-size: 16px;
+    width: 100%;
+    padding: 6px 1px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+option {
+    background-color: black;
+    padding: 6px;
+}
+
+button[type="submit"] {
+    padding: 10px 16px;
+    border-radius: 4px;
+    border: 4px solid transparent;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: transparent;
+    border: 4px solid white;
+    color: white;
+}
