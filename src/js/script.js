@@ -6,7 +6,7 @@ const context = canvas.getContext("2d");
 const frameCount = 179;
 
 const currentFrame = (index) =>
-  `../src/img/balls/${(index + 1).toString()}.jpg`;
+  `./src/img/balls/${(index + 1).toString()}.jpg`;
 
 const images = [];
 let ball = { frame: 0 };
