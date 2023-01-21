@@ -1,88 +1,123 @@
 .contact {
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    background: url("https://media1.giphy.com/media/tVM0hQmU52iKcLI1Kk/giphy.gif?cid=790b7611843fb621cbd48e6bb81a582f3130a1afc58f08a4&rid=giphy.gif&ct=g") no-repeat center center;
-    background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background: url("https://media1.giphy.com/media/tVM0hQmU52iKcLI1Kk/giphy.gif?cid=790b7611843fb621cbd48e6bb81a582f3130a1afc58f08a4&rid=giphy.gif&ct=g")
+    no-repeat center center;
+  background-size: cover;
 }
-
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .text,
 .form {
-    height: 80vh;
+  height: 80vh;
 }
 
 .text {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 38%;
-    font-size: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 38%;
+  font-size: 3rem;
 }
 
 .form {
-    padding: 30px 50px;
-    width: 48%;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(8px) brightness(50%);
-    color: white;
-    border-radius: 4px;
-    overflow-x: auto;
+  padding: 30px 50px;
+  width: 48%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px) brightness(50%);
+  color: white;
+  border-radius: 4px;
+  overflow-x: auto;
 }
 
 .form::-webkit-scrollbar {
-    width: 4px;
+  width: 4px;
 }
 
 .form::-webkit-scrollbar-button,
 .form::-webkit-scrollbar-track {
-    background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .form::-webkit-scrollbar-thumb {
-    background-color: white;
+  background-color: white;
 }
 
 .form-input-group {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .form-input-group label {
-    display: block;
-    margin-bottom: 2px;
+  display: block;
+  margin-bottom: 2px;
+}
+.form-solution-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+.form-radio-group {
+  margin-left: 10px;
 }
 
+.form-radio-group:first-child {
+  margin: 0;
+}
+.form-radio-group input {
+  opacity: 0;
+  position: absolute;
+}
+input[type="radio"]:focus + label {
+  opacity: 1;
+}
+.form-radio-group label {
+  user-select: none;
+  display: inline;
+  padding: 8px;
+  border: 1px solid white;
+  opacity: 0.6;
+  border-radius: 2px;
+  cursor: pointer;
+}
 select,
-input {
-    font-size: 16px;
-    width: 100%;
-    padding: 6px 1px;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    color: white;
-    border-bottom: 1px solid white;
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  font-size: 16px;
+  width: 100%;
+  padding: 6px 1px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 option {
-    background-color: black;
-    padding: 6px;
+  background-color: black;
+  padding: 6px;
 }
 
 button[type="submit"] {
-    padding: 10px 16px;
-    border-radius: 4px;
-    border: 4px solid transparent;
-    width: 100%;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.3s;
-    font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 4px solid transparent;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+  font-weight: bold;
 }
 
 button[type="submit"]:hover {
-    background-color: transparent;
-    border: 4px solid white;
-    color: white;
+  background-color: transparent;
+  border: 4px solid white;
+  color: white;
 }
