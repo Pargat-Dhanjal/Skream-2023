@@ -1,72 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	font-family: "Poppins", sans-serif;
-	overflow-x: hidden;
-	background-color: #0b254d;
-}
-
 canvas {
 	width: 100vw;
 	height: 100vh;
 	object-fit: cover;
-}
-
-/* Navbar */
-
-nav {
-	height: 100vh;
-	width: 6rem;
-	position: fixed;
-	z-index: 100;
-	display: flex;
-	flex-direction: column-reverse;
-	justify-content: space-around;
-	align-items: center;
-	font-weight: 600;
-	padding: 1rem 0;
-}
-
-nav a {
-	transform: rotateZ(-90deg);
-	color: #efefef;
-	font-size: 1.1rem;
-	margin: auto;
-	text-decoration: none;
-	transition: all 0.5s;
-}
-
-nav a:hover{
-	color: #E88022;
-	transform: scale(1.1) rotateZ(-90deg);;
-}
-
-nav img {
-	margin: 1rem auto;
-	width: 50%;
-	transition: all 0.5s;
-}
-
-nav img:hover{
-	transform: scale(1.1);
-	cursor: pointer;
-}
-
-/* Glass */
-
-.glass {
-	background: rgba(255, 255, 255, 0.1);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(20px);
-	-webkit-backdrop-filter: blur(20px);
-	border: none;
-	color: whitesmoke;
 }
 
 /* Cards */
@@ -166,6 +101,7 @@ nav img:hover{
 }
 
 .LandingPage--image {
+	opacity: 0.5;
 	width: 20vw;
 	z-index: -1;
 }

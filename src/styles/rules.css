@@ -1,0 +1,41 @@
+section {
+    padding-left: 7rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card {
+    position: relative;
+    border-radius: 1rem;
+    margin: auto;
+    width: 80%;
+    padding:1rem 3rem 2rem;
+}
+
+.card h1{
+    font-size: 5rem;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #efefef;
+    transition: all 0.5s;
+}
+
+.card h1:hover{
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.content {
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.content li{
+    margin-top: 0.5rem;
+    transition: all 0.5s;
+}
+
+.content li:hover{
+    transform: scale(1.02);
+}
