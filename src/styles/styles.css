@@ -73,7 +73,7 @@ canvas {
 	color: transparent;
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: #efefef;
-	font-size: 12rem;
+	font-size: 10rem;
 	position: absolute;
 	transform: translateY(-30%) translateX(25%);
 	top: 0;
@@ -170,26 +170,7 @@ canvas {
 .LandingPage--man {
 	z-index: 100;
 	position: absolute;
-	height: 75vh;
+	height: 70vh;
 	top: 0;
 	left: 0;
-}
-.LandingPage--TextContainer {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	z-index: 200;
-	transform: translateY(-50%);
-	font-weight: 700;
-
-	font-size: 3rem;
-	line-height: 1;
-}
-.LandingPage--TopText {
-	color: #efefef;
-}
-.LandingPage--BottomText {
-	color: transparent;
-	-webkit-text-stroke-width: 3px;
-	-webkit-text-stroke-color: #efefef;
 }
