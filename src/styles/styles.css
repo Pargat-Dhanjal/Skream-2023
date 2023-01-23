@@ -42,9 +42,9 @@ nav a {
 	transition: all 0.5s;
 }
 
-nav a:hover{
-	color: #E88022;
-	transform: scale(1.1) rotateZ(-90deg);;
+nav a:hover {
+	color: #e88022;
+	transform: scale(1.1) rotateZ(-90deg);
 }
 
 nav img {
@@ -53,7 +53,7 @@ nav img {
 	transition: all 0.5s;
 }
 
-nav img:hover{
+nav img:hover {
 	transform: scale(1.1);
 	cursor: pointer;
 }
@@ -224,4 +224,36 @@ nav img:hover{
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
+}
+.swiper-slide > img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.LandingPage--man {
+	z-index: 100;
+	position: absolute;
+	height: 75vh;
+	top: 0;
+	left: 0;
+}
+.LandingPage--TextContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 200;
+	transform: translateY(-50%);
+	font-weight: 700;
+
+	font-size: 3rem;
+	line-height: 1;
+}
+.LandingPage--TopText {
+	color: #efefef;
+}
+.LandingPage--BottomText {
+	color: transparent;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: #efefef;
 }
