@@ -1,5 +1,5 @@
 section {
-    padding: 2rem 1rem 2rem 7rem;
+    padding: 2rem 1rem 5% 7rem;
 }
 
 .card {
@@ -8,6 +8,7 @@ section {
     margin: auto;
     width: 80%;
     padding:1rem 3rem 2rem;
+    
 }
 
 .card h1{
@@ -35,4 +36,19 @@ section {
 
 .content li:hover{
     transform: scale(1.02);
+}
+
+@media only screen and (max-width: 991px) {
+    section{
+        padding: 10% 0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .card{
+        position: inherit;
+        width:90%;
+        margin: 0;
+    }
 }

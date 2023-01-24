@@ -2,6 +2,7 @@ section {
     padding-left: 7rem;
     padding-top: 5rem;
     padding-right: 1rem;
+    padding-bottom: 5%;
 }
 
 .card{
@@ -24,4 +25,13 @@ section {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@media only screen and (max-width: 991px) {
+
+    section
+    {
+        padding: 0;
+        padding-top: 2rem;
+    }
 }

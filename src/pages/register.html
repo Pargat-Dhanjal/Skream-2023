@@ -1,106 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skream-2023</title>
-    <link rel="stylesheet" href="/src/styles/navbar.css">
-    <link rel="stylesheet" href="/src/styles/register.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/src/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/src/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/src/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/src/favicon/site.webmanifest" />
-    
-  </head>
-  <body>
-    <nav class="glass">
-      <a href="/index.html">Home</a>
-      <a href="/src/pages/events.html">Events</a>
-      <a href="/src/pages/rules.html">Rules</a>
-      <a href="/src/pages/register.html">Register</a>
-      <a href="/src/pages/parvaah.html">Parvaah</a>
-      <a href="/src/pages/sponsors.html">Sponsors</a>
-      <img src="/src/img/logo.png" alt="Skream-logo" />
-    </nav>
-    <section class="contact">
-      <div class="text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      </div>
-      <div class="form glass">
-        <form>
-          <div class="form-input-group">
-            <label for="interested_sport">I'm interested in...</label>
-            <select name="interested_sport" id="interested_sport">
-              <option value="cricket">Cricket</option>
-              <option value="football">Football</option>
-            </select>
-          </div>
-          <div class="form-input-group">
-            <label for="name">Your Name</label>
-            <input id="name" type="text" required />
-          </div>
-          <div class="form-input-group">
-            <label for="email">Your Email</label>
-            <input id="email" type="email" required />
-          </div>
-          <div class="form-input-group">
-            <label for="male">Your Gender</label>
-            <div class="form-solution-wrapper">
-              <div class="form-radio-group">
-                <input type="radio" name="gender" id="male" value="male" />
-                <label for="male">Male</label>
-              </div>
-              <div class="form-radio-group">
-                <input type="radio" name="gender" id="female" value="female" />
-                <label for="female">Female</label>
-              </div>
-            </div>
-          </div>
-          <div class="form-input-group">
-            <label for="college">Your College name</label>
-            <input id="college" name="college" type="text" required />
-          </div>
-          <div class="form-input-group">
-            <label for="year_of_study">Year of study</label>
-            <input
-              id="year_of_study"
-              name="year_of_study"
-              type="number"
-              required
-            />
-          </div>
-          <div class="form-input-group">
-            <label for="branch">Your Branch</label>
-            <select name="branch" id="branch">
-              <option value="Computer Science">Computer Science</option>
-              <option value="IT">IT</option>
-              <option value="EXTC">EXTC</option>
-            </select>
-          </div>
-          <div class="form-input-group">
-            <label for="branch">Your Phone number</label>
-            <input type="number" name="phone_number" id="phone_number" />
-          </div>
-          <div class="form-input-group">
-            <button type="submit">Send Request</button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Skream-2023</title>
+		<link rel="stylesheet" href="/src/styles/navbar.css" />
+		<link rel="stylesheet" href="/src/styles/register.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/src/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/src/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/src/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/src/favicon/site.webmanifest" />
+	</head>
+	<body>
+		<nav class="glass">
+			<a href="/index.html">Home</a>
+			<a href="/src/pages/events.html">Events</a>
+			<a href="/src/pages/rules.html">Rules</a>
+			<a href="/src/pages/register.html">Register</a>
+			<a href="/src/pages/parvaah.html">Parvaah</a>
+			<a href="/src/pages/sponsors.html">Sponsors</a>
+			<img src="/src/img/logo.png" alt="Skream-logo" />
+		</nav>
+		<nav class="mobile-nav glass">
+			<img src="/src/img/logo.png" alt="Parvaah-logo" />
+			<input type="checkbox" name="" id="" class="check" />
+			<ul class="menu-items">
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="./events.html">Events</a></li>
+				<li><a href="./rules.html">Rules</a></li>
+				<li><a href="./register.html">Register</a></li>
+				<li><a href="./parvaah.html">Parvaah</a></li>
+				<li><a href="./sponsors.html">Sponsors</a></li>
+				<li>
+					<div class="icons">
+						<a
+							href="https://www.instagram.com/kjsce_skream/"
+							class="icon-mobile"
+							target="_blank"
+						>
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+						<a
+							href="https://www.facebook.com/KJSCESKREAM/"
+							class="icon-mobile"
+							target="_blank"
+						>
+							<i class="fa-brands fa-facebook"></i>
+						</a>
+						<a
+							href="https://twitter.com/kjsceskream"
+							class="icon-mobile"
+							target="_blank"
+						>
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+						<a
+							href="https://www.snapchat.com/add/kjscelive"
+							class="icon-mobile"
+							target="_blank"
+						>
+							<i class="fa-brands fa-snapchat"></i>
+						</a>
+						<a
+							href="https://www.youtube.com/kjscelive"
+							class="icon-mobile"
+							target="_blank"
+						>
+							<i class="fa-brands fa-youtube"></i>
+						</a>
+					</div>
+				</li>
+			</ul>
+			<div class="ham-menu">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</div>
+		</nav>
+		<section class="contact">
+			<div class="text">
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+			</div>
+			<div class="form glass">
+				<form>
+					<div class="form-input-group">
+						<label for="interested_sport">I'm interested in...</label>
+						<select name="interested_sport" id="interested_sport">
+							<option value="cricket">Cricket</option>
+							<option value="football">Football</option>
+						</select>
+					</div>
+					<div class="form-input-group">
+						<label for="name">Your Name</label>
+						<input id="name" type="text" required />
+					</div>
+					<div class="form-input-group">
+						<label for="email">Your Email</label>
+						<input id="email" type="email" required />
+					</div>
+					<div class="form-input-group">
+						<label for="male">Your Gender</label>
+						<div class="form-solution-wrapper">
+							<div class="form-radio-group">
+								<input type="radio" name="gender" id="male" value="male" />
+								<label for="male">Male</label>
+							</div>
+							<div class="form-radio-group">
+								<input type="radio" name="gender" id="female" value="female" />
+								<label for="female">Female</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input-group">
+						<label for="college">Your College name</label>
+						<input id="college" name="college" type="text" required />
+					</div>
+					<div class="form-input-group">
+						<label for="year_of_study">Year of study</label>
+						<input
+							id="year_of_study"
+							name="year_of_study"
+							type="number"
+							required
+						/>
+					</div>
+					<div class="form-input-group">
+						<label for="branch">Your Branch</label>
+						<select name="branch" id="branch">
+							<option value="Computer Science">Computer Science</option>
+							<option value="IT">IT</option>
+							<option value="EXTC">EXTC</option>
+						</select>
+					</div>
+					<div class="form-input-group">
+						<label for="branch">Your Phone number</label>
+						<input type="number" name="phone_number" id="phone_number" />
+					</div>
+					<div class="form-input-group">
+						<button type="submit">Send Request</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</body>
 </html>

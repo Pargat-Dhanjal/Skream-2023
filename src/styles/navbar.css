@@ -1,108 +1,258 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
-    background: url(/src/img/background.png) no-repeat center center fixed;
-    background-size: cover;
-    background-color: #000B35;
+	font-family: "Poppins", sans-serif;
+	overflow-x: hidden;
+	background: url(/src/img/background.png) no-repeat center center fixed;
+	background-size: cover;
+	background-color: #000b35;
 }
 
 nav {
-    height: 100vh;
-    width: 6rem;
-    position: fixed;
-    z-index: 100;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    align-items: center;
-    font-weight: 600;
-    padding: 1rem 0;
+	height: 100vh;
+	width: 6rem;
+	position: fixed;
+	z-index: 100;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-around;
+	align-items: center;
+	font-weight: 600;
+	padding: 1rem 0;
 }
 
 nav a {
-    transform: rotateZ(-90deg);
-    color: #efefef;
-    font-size: 1.1rem;
-    margin: auto;
-    text-decoration: none;
-    transition: all 0.5s;
+	transform: rotateZ(-90deg);
+	color: #efefef;
+	font-size: 1.1rem;
+	margin: auto;
+	text-decoration: none;
+	transition: all 0.5s;
 }
 
 nav a:hover {
-    color: #E88022;
-    transform: scale(1.1) rotateZ(-90deg);
-    ;
+	color: #e88022;
+	transform: scale(1.1) rotateZ(-90deg);
 }
 
 nav img {
-    margin: 1rem auto;
-    width: 50%;
-    transition: all 0.5s;
+	margin: 1rem auto;
+	width: 50%;
+	transition: all 0.5s;
 }
 
 nav img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+	transform: scale(1.1);
+	cursor: pointer;
 }
 
 /* Glass */
 
 .glass {
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: none;
-    color: whitesmoke;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border: none;
+	color: whitesmoke;
 }
 
 /* glass button */
 
 .glass-button {
-    display: inline-block;
-    padding: 24px 32px;
-    border: 0;
-    text-decoration: none;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(30px);
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 14px;
-    letter-spacing: 2px;
-    cursor: pointer;
-    text-transform: uppercase;
+	display: inline-block;
+	padding: 24px 32px;
+	border: 0;
+	text-decoration: none;
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(30px);
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	letter-spacing: 2px;
+	cursor: pointer;
+	text-transform: uppercase;
 }
 
 .glass-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Social Media icons */
 .social-icons {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
 }
 
 .icon-link {
-    display: block;
-    font-size: 1.7rem;
-    color: whitesmoke;
-    margin: 0.5rem 0;
-    transition: all 0.5s;
+	display: block;
+	font-size: 1.7rem;
+	color: whitesmoke;
+	margin: 0.5rem 0;
+	transition: all 0.5s;
 }
 
-.icon-link:hover{
-    color: #E88022;
-    transform: scale(1.1);
+.icon-link:hover {
+	color: #e88022;
+	transform: scale(1.1);
+}
+
+.mobile-nav {
+	display: none;
+}
+
+.footer {
+	font-family: "Poppins", sans-serif;
+	width: 100vw;
+	text-align: center;
+	color: white;
+	padding: 4vh 0;
+}
+
+.footer > a {
+	text-decoration: none;
+	color: rgb(227, 79, 25);
+}
+
+@media only screen and (max-width: 991px) {
+	.social-icons {
+		display: none;
+	}
+	nav {
+		display: none;
+		align-items: initial;
+		position: inherit;
+	}
+	nav > img {
+		margin: 1rem;
+	}
+
+	.mobile-nav {
+		display: block;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		width: 100vw;
+		height: 12vh;
+		display: flex;
+	}
+
+	.mobile-nav > img {
+		width: 8vh;
+		position: relative;
+		left: 75vw;
+	}
+}
+
+.menu-items {
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	padding: 5rem;
+	top: 12vh;
+	list-style: none;
+	opacity: 0;
+	font-size: 2.5rem;
+	background-color: black;
+	height: 100vh;
+	border-radius: 0.25em;
+	transform: translateX(-10%);
+	transition: transform 100ms ease-in-out, opacity 200ms;
+}
+
+.menu-items li {
+	color: white;
+	padding: 0.5rem;
+}
+
+.menu-items li a {
+	color: white;
+	text-decoration: none;
+}
+
+.menu-items li a:hover {
+	color: rgb(174, 174, 174);
+}
+
+.check {
+	position: absolute;
+	left: 1rem;
+	height: 3rem;
+	width: 3rem;
+	opacity: 0;
+	z-index: 3001;
+}
+
+.check:hover {
+	cursor: pointer;
+}
+
+.check:checked ~ .menu-items {
+	display: block;
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+.ham-menu {
+	height: 3rem;
+	width: 3rem;
+	position: absolute;
+	/* top: 8rem; */
+	left: 1rem;
+	padding: 0.5rem;
+	z-index: 2001;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border-radius: 0.25em;
+}
+
+.ham-menu .line {
+	background-color: white;
+	border-radius: 1em;
+	width: 2rem;
+	height: 0.25rem;
+}
+
+.ham-menu .line1 {
+	transform-origin: 0% 0%;
+	transition: transform 100ms ease-in-out;
+}
+
+.ham-menu .line3 {
+	transform-origin: 0% 100%;
+	transition: transform 100ms ease-in-out;
+}
+
+.check:checked ~ .ham-menu .line1 {
+	display: block;
+	transform: rotate(45deg);
+}
+
+.check:checked ~ .ham-menu .line2 {
+	opacity: 0;
+}
+
+.check:checked ~ .ham-menu .line3 {
+	display: block;
+	transform: rotate(-45deg);
+}
+
+.icon-mobile {
+	font-size: 1.7rem;
+	color: whitesmoke;
+	margin-left: 0.5rem;
+}
+
+.icons {
+	margin-top: 1rem;
 }

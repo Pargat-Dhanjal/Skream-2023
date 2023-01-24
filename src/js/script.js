@@ -1,5 +1,8 @@
-const canvas = document.querySelector(".canvas");
-canvas.width = window.innerWidth;
+
+if(window.innerWidth>991){
+
+  const canvas = document.querySelector(".canvas");
+  canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const context = canvas.getContext("2d");
@@ -62,20 +65,21 @@ gsap.fromTo(
       gsap.to(".skream", { opacity: 0 });
     },
   }
-);
-
-images[0].onload = render;
-
-function render() {
-  context.canvas.width = images[0].width;
-  context.canvas.height = images[0].height;
-
-  context.clearRect(0, 0, canvas.width, canvas.height);
-  context.drawImage(images[ball.frame], 0, 0);
+  );
+  
+  images[0].onload = render;
+  
+  function render() {
+    context.canvas.width = images[0].width;
+    context.canvas.height = images[0].height;
+    
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(images[ball.frame], 0, 0);
+  }
+  
 }
-
-var swiper = new Swiper(".mySwiper", {
-  autoplay: {
+  var swiper = new Swiper(".mySwiper", {
+    autoplay: {
     delay: 2000,
   },
 });
