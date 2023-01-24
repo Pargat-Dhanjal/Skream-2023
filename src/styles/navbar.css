@@ -9,7 +9,7 @@
 body {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
-    background: url(/src/img/background.jpg) no-repeat center center fixed;
+    background: url(/src/img/background.png) no-repeat center center fixed;
     background-size: cover;
     background-color: #000B35;
 }
@@ -72,16 +72,37 @@ nav img:hover {
     border: 0;
     text-decoration: none;
     border-radius: 15px;
-    background-color: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(30px);
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
     letter-spacing: 2px;
     cursor: pointer;
     text-transform: uppercase;
-  }
-  
-  .glass-button:hover {
-    background-color: rgba(255,255,255,0.2);
-  }
+}
+
+.glass-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Social Media icons */
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.icon-link {
+    display: block;
+    font-size: 1.7rem;
+    color: whitesmoke;
+    margin: 0.5rem 0;
+    transition: all 0.5s;
+}
+
+.icon-link:hover{
+    color: #E88022;
+    transform: scale(1.1);
+}

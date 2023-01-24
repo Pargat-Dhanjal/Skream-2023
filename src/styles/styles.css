@@ -15,6 +15,15 @@ canvas {
 	justify-content: space-between;
 }
 
+.skream {
+	position: fixed;
+	z-index: 2;
+	right: 10%;
+	top: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
 .card {
 	display: flex;
 	border-radius: 1.5rem;
@@ -53,15 +62,6 @@ canvas {
 	max-width: 100%;
 	height: auto;
 	border-radius: 1rem;
-}
-
-.skream {
-	position: fixed;
-	z-index: 2;
-	right: 5%;
-	top: 10%;
-	display: flex;
-	justify-content: space-between;
 }
 
 .LandingPage {
@@ -133,7 +133,7 @@ canvas {
 	top: 45%;
 	width: 40vw;
 	height: 50vh;
-	background-color: #0b254d;
+	background-color: #010835;
 	transform: translate(-50%, -50%);
 	border: 1px solid #efefef;
 }
@@ -162,12 +162,14 @@ canvas {
 	-webkit-align-items: center;
 	align-items: center;
 }
-.swiper-slide > img {
+
+.swiper-slide>img {
 	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
+
 .LandingPage--man {
 	z-index: 100;
 	position: absolute;
