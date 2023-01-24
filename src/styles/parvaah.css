@@ -1,0 +1,87 @@
+.view{
+    padding: 4rem 1rem 2rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .glass{
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos img{
+    height: 15rem;
+    margin: 2rem 6rem 4rem;
+}
+
+.info{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 90%;
+}
+
+.info button{
+    margin: 2rem auto;
+}
+
+.card {
+    margin-top: 5rem;
+	display: flex;
+	border-radius: 1.5rem;
+	padding: 1rem;
+	text-align: left;
+	width: 85%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.text {
+	height: 100%;
+	width: 50%;
+	padding: 1rem;
+}
+
+.heading {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+	font-size: 2rem;
+	font-weight: 800;
+	margin-bottom: 1rem;
+    transition: all 0.7s;
+}
+
+.content {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.card-image {
+	width: 50%;
+	height: auto;
+	display: flex;
+	align-items: center;
+}
+
+.card-image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+}

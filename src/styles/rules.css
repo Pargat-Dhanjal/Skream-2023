@@ -1,8 +1,5 @@
 section {
-    padding-left: 7rem;
-    padding-right: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 1rem 2rem 7rem;
 }
 
 .card {
