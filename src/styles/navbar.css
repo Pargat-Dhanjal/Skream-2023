@@ -214,11 +214,14 @@ nav img:hover {
 	opacity: 1;
 }
 
+.check:not(:checked)~.menu-items {
+    display: none;
+}
+
 .ham-menu {
 	height: 3rem;
 	width: 3rem;
 	position: absolute;
-	/* top: 8rem; */
 	left: 1rem;
 	padding: 0.5rem;
 	z-index: 2001;
