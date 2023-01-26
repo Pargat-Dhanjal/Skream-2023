@@ -88,8 +88,8 @@ nav img:hover {
 /* Social Media icons */
 .social-icons {
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
+	bottom: 1.7rem;
+	right: 1.5rem;
 	z-index: 999;
 }
 
@@ -111,28 +111,37 @@ nav img:hover {
 }
 
 .footer {
-	font-family: "Poppins", sans-serif;
 	width: 100vw;
 	text-align: center;
 	color: white;
-	padding: 4vh 0;
+	padding: 0.5rem;
 }
 
-.footer > a {
+.footer a {
 	text-decoration: none;
+	font-size: 1rem;
+	color: white;
+	transition: all 0.5s;
+}
+
+.footer a:hover {
 	color: rgb(227, 79, 25);
+	font-size: 1.05rem;
+	text-decoration: none;
 }
 
 @media only screen and (max-width: 991px) {
 	.social-icons {
 		display: none;
 	}
+
 	nav {
 		display: none;
 		align-items: initial;
 		position: inherit;
 	}
-	nav > img {
+
+	nav>img {
 		margin: 1rem;
 	}
 
@@ -140,16 +149,19 @@ nav img:hover {
 		display: block;
 		position: -webkit-sticky;
 		position: sticky;
-		top: 0;
-		width: 100vw;
-		height: 12vh;
+		margin: 0 auto;
+		top: 0.5rem;
+		width: 95vw;
+		height: 4rem;
 		display: flex;
+		border-radius: 1rem;
 	}
 
-	.mobile-nav > img {
-		width: 8vh;
-		position: relative;
-		left: 75vw;
+	.mobile-nav>img {
+		height: 2.5rem;
+		width: auto;
+		position: absolute;
+		right: 0;
 	}
 }
 
@@ -158,11 +170,11 @@ nav img:hover {
 	width: 100%;
 	position: absolute;
 	padding: 5rem;
-	top: 12vh;
+	top: 10vh;
 	list-style: none;
 	opacity: 0;
 	font-size: 2.5rem;
-	background-color: black;
+	background-color: #000b35;
 	height: 100vh;
 	border-radius: 0.25em;
 	transform: translateX(-10%);
@@ -196,7 +208,7 @@ nav img:hover {
 	cursor: pointer;
 }
 
-.check:checked ~ .menu-items {
+.check:checked~.menu-items {
 	display: block;
 	transform: translateX(0%);
 	opacity: 1;
@@ -233,16 +245,16 @@ nav img:hover {
 	transition: transform 100ms ease-in-out;
 }
 
-.check:checked ~ .ham-menu .line1 {
+.check:checked~.ham-menu .line1 {
 	display: block;
 	transform: rotate(45deg);
 }
 
-.check:checked ~ .ham-menu .line2 {
+.check:checked~.ham-menu .line2 {
 	opacity: 0;
 }
 
-.check:checked ~ .ham-menu .line3 {
+.check:checked~.ham-menu .line3 {
 	display: block;
 	transform: rotate(-45deg);
 }
