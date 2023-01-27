@@ -16,9 +16,13 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png" />
 	<link rel="manifest" href="./src/favicon/site.webmanifest" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.1.js"
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="loading()">
+	<div id="preloader"></div>
 	<nav class="glass">
 		<a href="index.html">Home</a>
 		<a href="src/pages/events.html">Events</a>
@@ -214,6 +218,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="./src/js/script.js"></script>
+	<script src="./src/js/loader.js"></script>
 </body>
 
 </html>

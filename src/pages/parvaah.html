@@ -12,17 +12,20 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/src/favicon/favicon-16x16.png" />
 	<link rel="manifest" href="./src/favicon/site.webmanifest" />
 	<!-- Styles -->
-	<link rel="stylesheet" href="/src/styles/navbar.css" />
-	<link rel="stylesheet" href="/src/styles/parvaah.css" />
+	<link rel="stylesheet" href="../styles/navbar.css" />
+	<link rel="stylesheet" href="../styles/parvaah.css" />
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://code.jquery.com/jquery-3.6.1.js"
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="loading()">
+	<div id="preloader"></div>
 	<nav class="glass">
-		<a href="/index.html">Home</a>
+		<a href="../../index.html">Home</a>
 		<a href="./events.html">Events</a>
 		<a href="./rules.html">Rules</a>
 		<a href="./register.html">Register</a>
@@ -34,7 +37,7 @@
 		<img src="../img/logo.png" alt="Skream-logo" />
 		<input type="checkbox" name="" id="" class="check" />
 		<ul class="menu-items">
-			<li><a href="/index.html">Home</a></li>
+			<li><a href="../../index.html">Home</a></li>
 			<li><a href="./events.html">Events</a></li>
 			<li><a href="./rules.html">Rules</a></li>
 			<li><a href="./register.html">Register</a></li>
@@ -98,7 +101,8 @@
 					efforts are being made for reducing, reusing and recycling the waste
 					generated and contributing back to the society.
 				</p>
-				<a href="mailto:studentscouncil.engg@somaiya.edu?subject=Inquiry regarding volunteering for KJSCE Parvaah" target="_blank">
+				<a href="mailto:studentscouncil.engg@somaiya.edu?subject=Inquiry regarding volunteering for KJSCE Parvaah"
+					target="_blank">
 
 					<button class="glass-button">Volunteer</button>
 				</a>
@@ -189,6 +193,7 @@
 		<a href="https://github.com/Arya-A-Nair">Arya Nair</a> and
 		<a href="https://github.com/LazerRazor">Gaurish Baliga</a>)
 	</div>
+	<script src="../js/loader.js"></script>
 </body>
 
 </html>

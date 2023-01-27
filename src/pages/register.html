@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>KJSCE SKREAM</title>
-	<link rel="stylesheet" href="/src/styles/navbar.css" />
-	<link rel="stylesheet" href="/src/styles/register.css" />
+	<link rel="stylesheet" href="../styles/navbar.css" />
+	<link rel="stylesheet" href="../styles/register.css" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/src/favicon/apple-touch-icon.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="/src/favicon/favicon-32x32.png" />
 	<link rel="icon" type="image/png" sizes="16x16" href="/src/favicon/favicon-16x16.png" />
@@ -16,11 +16,14 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://code.jquery.com/jquery-3.6.1.js"
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="loading()">
+	<div id="preloader"></div>
 	<nav class="glass">
-		<a href="/index.html">Home</a>
+		<a href="../../index.html">Home</a>
 		<a href="./events.html">Events</a>
 		<a href="./rules.html">Rules</a>
 		<a href="./register.html">Register</a>
@@ -32,7 +35,7 @@
 		<img src="../img/logo.png" alt="Skream-logo" />
 		<input type="checkbox" name="" id="" class="check" />
 		<ul class="menu-items">
-			<li><a href="/index.html">Home</a></li>
+			<li><a href="../../index.html">Home</a></li>
 			<li><a href="./events.html">Events</a></li>
 			<li><a href="./rules.html">Rules</a></li>
 			<li><a href="./register.html">Register</a></li>
@@ -157,6 +160,7 @@
 		<a href="https://github.com/Arya-A-Nair">Arya Nair</a> and
 		<a href="https://github.com/LazerRazor">Gaurish Baliga</a>)
 	</div>
+	<script src="../js/loader.js"></script>
 </body>
 
 </html>

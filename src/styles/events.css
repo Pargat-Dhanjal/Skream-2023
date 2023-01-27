@@ -5,7 +5,7 @@ section {
     padding-bottom: 5%;
 }
 
-.card{
+.card {
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
@@ -16,22 +16,32 @@ section {
     flex-direction: column;
     justify-content: space-between;
 }
-.imgContainer>img{
+
+.card h1 {
+    color: transparent;
+    font-weight: 900;
+    -webkit-text-stroke: 1px white;
+}
+
+.imgContainer>img {
     width: 100%;
     border-radius: 0.5rem;
     max-height: 80%;
 }
-.imgContainer{
+
+.imgContainer {
     width: 100%;
     height: 100%;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
 
-.card:hover{
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transform: scale(1.07);
+.card:hover {
+    -moz-box-shadow: 13px 13px 0px 0px #FFFFFF;
+    -webkit-box-shadow: 13px 13px 0px 0px #FFFFFF;
+     box-shadow: 13px 13px 0px 0px  #FFFFFF;
+    transform: scale(1.1);
 }
 
 .cards {
@@ -44,8 +54,7 @@ section {
 
 @media only screen and (max-width: 991px) {
 
-    section
-    {
+    section {
         padding: 0;
         padding-top: 2rem;
     }
