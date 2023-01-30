@@ -24,6 +24,11 @@
 
 <body onload="loading()">
 	<div id="preloader"></div>
+	<div id="overlay" onclick="document.getElementById('overlay').style.display='none'">
+		<div class="modal glass">
+			hello
+		</div>
+	</div>
 	<nav class="glass">
 		<a href="../../index.html">Home</a>
 		<a href="./events.html">Events</a>
@@ -87,8 +92,9 @@
 		</a>
 	</div>
 	<section>
+		
 		<div class="cards">
-			<div href="#" class="card glass">
+			<div href="#" class="card glass" onclick="handleClick('Badminton','../img/events/badminton.png')">
 				<h1>Badminton</h1>
 				<div class="imgContainer">
 					<img src="../img/events/badminton.png" /></div>
@@ -189,6 +195,11 @@
 				<div class="imgContainer">
 					<img src="../img/events/Relay.png" /></div>
 			</div>
+			<div href="#" class="card glass">
+				<h1>Throwball</h1>
+				<div class="imgContainer">
+					<img src="../img/events/Throwball.png" /></div>
+			</div>
 		</div>
 		</div>
 		</div>
@@ -201,6 +212,7 @@
 		<a href="https://github.com/Arya-A-Nair">Arya Nair</a> and
 		<a href="https://github.com/LazerRazor">Gaurish Baliga</a>)
 	</div>
+	<script src="../js/events.js"></script>
 	<script src="../js/loader.js"></script>
 </body>
 
