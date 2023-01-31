@@ -67,7 +67,7 @@ nav img:hover {
 
 .glass-button {
 	display: inline-block;
-	padding: 24px 32px;
+	padding: 1rem;
 	border: 0;
 	text-decoration: none;
 	border-radius: 15px;
@@ -79,6 +79,10 @@ nav img:hover {
 	letter-spacing: 2px;
 	cursor: pointer;
 	text-transform: uppercase;
+	position: fixed;
+	top: 2%;
+	right: 1%;
+	z-index: 10;
 }
 
 .glass-button:hover {
@@ -133,6 +137,10 @@ nav img:hover {
 @media only screen and (max-width: 991px),
 screen and (max-height:600px) {
 	.social-icons {
+		display: none;
+	}
+
+	.glass-button{
 		display: none;
 	}
 
