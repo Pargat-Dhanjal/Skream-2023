@@ -1,3 +1,16 @@
+.cards {
+  padding-top: 5rem;
+}
+
+a {
+  color: orange;
+  transition: all 0.5s;
+}
+
+a:hover {
+  font-size: 1.1rem;
+}
+
 .register {
   width: 100vw;
   height: 100vh;
@@ -9,13 +22,60 @@
 
 .register>iframe {
   border-radius: 1rem;
-  width: 80%;
+  width: 75%;
   height: 80%;
+}
+
+.card {
+  position: relative;
+  border-radius: 1rem;
+  margin: 0 auto 2rem;
+  width: 75%;
+  padding: 1rem 3rem 1rem;
+
+}
+
+.card h1 {
+  font-size: 5rem;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #efefef;
+  transition: all 0.5s;
+}
+
+.card h1:hover {
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.content {
+  text-align: left;
+  font-size: 1rem;
+  margin: 1.2rem;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: orange;
+  margin: 0.5rem;
+}
+
+.content li {
+  margin-top: 0.5rem;
 }
 
 @media only screen and (max-width: 991px) {
   .register>iframe {
-    width: 95%;
+    width: 90%;
     height: 90%;
+  }
+
+  .card {
+    position: inherit;
+    width: 90%;
+  }
+
+  .card h1{
+    font-size: 3rem;
   }
 }

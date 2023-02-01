@@ -7,19 +7,19 @@ section {
     border-radius: 1rem;
     margin: auto;
     width: 80%;
-    padding:1rem 3rem 2rem;
-    
+    padding: 1rem 3rem 2rem;
+
 }
 
-.card h1{
+.card h1 {
     font-size: 5rem;
     color: transparent;
     -webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: #efefef;
+    -webkit-text-stroke-color: #efefef;
     transition: all 0.5s;
 }
 
-.card h1:hover{
+.card h1:hover {
     color: whitesmoke;
     cursor: pointer;
 }
@@ -29,26 +29,31 @@ section {
     font-size: 1.1rem;
 }
 
-.content li{
+.content li {
     margin-top: 0.5rem;
     transition: all 0.5s;
 }
 
-.content li:hover{
+.content li:hover {
     transform: scale(1.02);
 }
 
 @media only screen and (max-width: 991px) {
-    section{
+    section {
         padding: 10% 0;
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
 
     }
-    .card{
+
+    .card {
         position: inherit;
-        width:90%;
+        width: 90%;
         margin: 0;
+    }
+
+    .card h1 {
+        font-size: 3rem;
     }
 }
