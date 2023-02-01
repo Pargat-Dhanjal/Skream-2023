@@ -1,11 +1,10 @@
 const handleClick = (name, imageSrc) => {
-  console.log(name, imageSrc);
-  document.getElementById("modal-image").setAttribute("src", imageSrc);
-  document.getElementById("overlay").style.display = "flex";
-  document.body.style.position = "fixed";
+  $("#modal-image").attr("src",imageSrc);
+  $("#overlay").attr("style", "display:flex").hide().fadeIn()
+  $("body").attr("style", "overflow:hidden")
 };
 
 const closeModal = () => {
-  document.body.style.position = "initial";
-  document.getElementById("overlay").style.display = "none";
+  $("body").attr("style", "overflow:auto")
+  $("#overlay").fadeOut()
 };
