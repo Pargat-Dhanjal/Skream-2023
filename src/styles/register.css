@@ -1,4 +1,4 @@
-.message{
+.message {
   text-align: center;
   color: #efefef;
   margin-bottom: 2rem;
@@ -71,9 +71,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 991px) {
-  body{
+  body {
     text-align: center;
   }
+
   .register>iframe {
     width: 90%;
     height: 90%;
@@ -84,7 +85,7 @@ a:hover {
     width: 90%;
   }
 
-  .card h1{
+  .card h1 {
     font-size: 2.5rem;
   }
 }

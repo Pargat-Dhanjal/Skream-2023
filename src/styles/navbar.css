@@ -140,7 +140,7 @@ screen and (max-height:600px) {
 		display: none;
 	}
 
-	.glass-button{
+	.glass-button {
 		display: none;
 	}
 
@@ -285,11 +285,10 @@ screen and (max-height:600px) {
 
 #preloader {
 	position: fixed;
-    width: 100%;
-    height: 100%;
-    background: url('../img/loading.gif') no-repeat center center;
+	width: 100%;
+	height: 100%;
+	background: url('../img/loading.gif') no-repeat center center;
 	background-size: auto 70%;
-	background-color: #000935;
-    z-index: 9999;
+	background-color: #050033;
+	z-index: 9999;
 }
-
