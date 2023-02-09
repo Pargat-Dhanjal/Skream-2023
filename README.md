@@ -1,5 +1,5 @@
 # KJSCE Skream 2023
-The development repository for the offical website of KJSCE Skream 2023
+The development repository for the official website of KJSCE Skream 2023
 
 
 ## Website
