@@ -18,9 +18,13 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="../styles/navbar.css" />
 	<link rel="stylesheet" href="../styles/sponsors.css" />
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.1.js"
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="loading()">
+	<div id="preloader"></div>
 	<nav class="glass">
 		<img src="../img/logo.png" alt="Skream-logo" />
 		<a href="../../index.html">Home</a>
@@ -79,52 +83,55 @@
 		</a>
 	</div>
 	<a href="./contact.html"><button class="glass-button">Contact Us</button></a>
-	 <section>
-		<div class="cards" id="items">
-			<div href="#" class="card glass">
-				<img src="../../2022/assets/images/sponsors/2022/Nivia Logo (1).png" />
-				<h4>____ Partner</h4>
-			</div>
-			<div href="#" class="card glass">
-				<img src="https://picsum.photos/600" />
-				<h4>____ Partner</h4>
-			</div>
-			<div href="#" class="card glass">
-				<h1>Sponsor Name</h1>
-				<img src="https://picsum.photos/600" />
-				<h4>____ Partner</h4>
-			</div>
-			<div href="#" class="card glass">
-				<h1>Sponsor Name</h1>
-				<img src="https://picsum.photos/600" />
-				<h4>____ Partner</h4>
-			</div>
-			<div href="#" class="card glass">
-				<h1>Sponsor Name</h1>
-				<img src="https://picsum.photos/600" />
-				<h4>____ Partner</h4>
-			</div>
-			<div href="#" class="card glass">
-				<h1>Sponsor Name</h1>
-				<img src="https://picsum.photos/600" />
-				<h4>____ Partner</h4>
-			</div>
-			<div href="#" class="card glass">
-				<h1>Sponsor Name</h1>
-				<img src="https://picsum.photos/600" />
-				<h4>____ Partner</h4>
+	<section>
+		<div class="main glass">
+			<h1>Our Sponsors</h1>
+			<div class="sponsor-container">
+				<div class="sponsor-buttons">
+					<div class="sponsor-btn">
+						<button class="glass-button relative" onclick="showPrevious()">Previous Sponsors</button>
+					</div>
+					<div class="sponsor-btn">
+						<button class="glass-button relative" onclick="showCurrent()">Current Sponsors</button>
+					</div>
+				</div>
+				<div class="sponsor-wrapper">
+					<div class="sponsor-wrapper-in">
+						<div class="previous-sponsor" id="previous-sponsor" style="display: none">
+							<div class="sponsor-box">
+								<div class="sponsor-card">
+									<a href="https://devfolio.co/" target="_blank">
+										<img src="/src/img/kjsce.jpeg" />
+										<h3>Powered By</h3>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div id="current-sponsor" style="display: block">
+							<div class="sponsor-box">
+								<div class="sponsor-card">
+									<a href="https://devfolio.co/" target="_blank">
+										<img src="/src/img/about-logo.png" />
+										<h3>Powered By</h3>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
-	<script  src="../js/sponsor.js"></script>
-	<!--
 	<div class="footer glass">
 		Made with ❤️ by
 		<a href="https://www.kjscecodecell.com/">KJSCE Codecell</a> (<a href="https://github.com/Pargat-Dhanjal">Pargat
 			Singh</a>, <a href="https://github.com/VinayKanase">Vinay Kanse</a>,
 		<a href="https://github.com/Arya-A-Nair">Arya Nair</a> and
 		<a href="https://github.com/LazerRazor">Gaurish Baliga</a>)
-	</div> -->
+	</div>
+	<script src="../js/sponsor.js"></script>
+	<script src="../js/loader.js"></script>
 </body>
 
 </html>

@@ -1,44 +1,110 @@
 section {
-	padding-left: 7rem;
-	padding-top: 5rem;
-	padding-right: 1rem;
-	padding-bottom: 4rem;
+	padding: 1.5rem 1rem 1.5rem 7rem;
 }
 
-.card {
-	padding: 1rem;
-	margin: 1rem;
-	border-radius: 1rem;
-	text-align: center;
-	height: 20rem;
-	transition: all 0.5s;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.card:hover {
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	transform: scale(1.07);
-}
-
-.cards {
+.main {
 	max-width: 1200px;
 	margin: 0 auto;
-	display: grid;
-	gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	padding: 1rem 2rem;
+	border-radius: 1rem;
 }
 
-.card>img {
-	max-width: 70%;
-	max-height: 70%;
+.main h1 {
+	font-size: 5rem;
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #efefef;
 }
+
+.relative {
+	position: relative;
+	display: block;
+}
+
+.sponsor-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.sponsor-wrapper {
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+.sponsor-buttons {
+	margin-top: 1rem;
+}
+
+.sponsor-btn {
+	display: inline-block;
+	margin: 0 1rem;
+}
+
+.sponsor-wrapper-in {
+	border: solid 1px transparent;
+	border-radius: 0.5rem;
+	margin: 1rem;
+	height: 55vh;
+	overflow: auto;
+	backdrop-filter: blur(3px);
+}
+
+.previous-sponsor {
+	justify-content: center;
+	align-items: center;
+}
+
+.sponsor-box {
+	display: flex;
+	height: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.sponsor-card {
+	width: 25%;
+	min-width: 9rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 1rem;
+}
+
+.sponsor-card img {
+	width: 85%;
+	height: auto;
+	display: block;
+	margin: auto;
+	border-radius: 0.5rem;
+}
+
+.sponsor-card a {
+	text-decoration: none;
+	color: white;
+}
+
+.sponsor-box h3 {
+	padding: 0.5rem;
+	font-size: 1rem;
+}
+
 
 @media only screen and (max-width: 991px) {
 	section {
-		padding: 0;
-		padding-top: 2rem;
+		padding: 1.5rem;
+		text-align: center;
+	}
+
+	.main h1 {
+		font-size: 3.5rem;
+	}
+
+	.sponsor-btn {
+		margin:0.5rem;
 	}
 }
