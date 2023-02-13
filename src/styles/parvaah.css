@@ -153,16 +153,16 @@ section .glass {
 }
 
 .footer {
-	color: black;
+	color: white;
 	background-color: green;
 }
 
 .footer a {
-	color: black;
+	color: white;
 }
 
 .footer a:hover {
-	color: white;
+	color: whitesmoke;
 }
 
 .social-icons {
